@@ -1,13 +1,10 @@
-import React, {useState, createContext, useEffect} from 'react'
+import React, {useState, createContext} from 'react'
+//import axios from 'axios'
 
 const ContactsContext = createContext();
 
 export const ContactsProvider = (props) => {
     const [contacts, setContacts] = useState([{name:'Yusuf samaila', email:'yusuf7samaila@gmail.com', phone:'070111'}])
-
-    useEffect(()=>{
-        
-    })
 
     const updateContacts = (id) => {
         //const newContacts = contacts.filter(contact => contact)
